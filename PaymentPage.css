@@ -1,0 +1,9 @@
+.trainer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trainer-table {
+  overflow-x: auto;
+}

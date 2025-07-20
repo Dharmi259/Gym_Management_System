@@ -1,0 +1,73 @@
+.login-container {
+  background-image: url("C:/Users/Dell/gym-management/src/assests/gym-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 106%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2.5px); /* ✨ Blur effect like home.css */
+  background-color: rgba(0, 0, 0, 0.5); /* semi-dark overlay */
+  z-index: 0;
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(30, 41, 59, 0.8); /* semi-transparent dark card */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  color: #FFD700; /* golden title text like hero section */
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #334155;
+  color: #fff;
+}
+
+.login-form input::placeholder {
+  color: #cbd5e1;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #2563eb;
+}
